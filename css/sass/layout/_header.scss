@@ -1,0 +1,92 @@
+
+/*start header*/
+.header{
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid $secondColor;
+
+    .logo{
+        position: relative;
+        @media #{$minSmall}{
+            width:100%;
+            float:none;
+            text-align: center;
+        }
+        @media #{$minMedium}{
+            width:30%;
+            float:$float-left;
+            text-align: $text-left;
+        }
+        
+
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+            color:$mainColor
+
+        }
+        p{
+            font-size:15px;
+            text-transform: capitalize;
+            color:$secondColor;
+            padding: 0;
+
+        }
+    }
+
+    .navbar{
+        overflow:hidden;
+        background-color: $mainColor;
+        border-radius: 15px;
+
+        @media #{$minSmall}{
+            width:100%;
+            float:none;
+            margin-top:30px;
+        }
+
+        @media #{$minMedium}{
+            width:70%;
+            float:$float-left;
+            margin-top: 1em;
+            display: block !important;
+        }
+
+        @media #{$maxMobile}{
+            display: none;
+            border-radius: 0;
+        }
+
+        li{
+            width:20%;
+            float:$float-left;
+            font-size:20px;
+            text-align:center;
+            text-transform: capitalize;
+
+            @media #{$maxMobile}{
+                display: block;
+                float:none;
+                width:100%;
+               
+            }
+
+            a{
+                display: block;
+                padding: 20px 15px;
+                color:$forthColor;
+                text-decoration: none;
+             
+                &:hover{
+                    color:$thirdColor;
+
+
+                 }
+                }
+            }
+
+        }
+    }
+
+
+/*end header*/

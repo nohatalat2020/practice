@@ -1,0 +1,125 @@
+/* start footer*/
+.footer{
+    background-color: $mainColor;
+    overflow:hidden;
+    padding: 30px 0;
+    margin-top: 30px;
+    .gallery,.info,.contact{
+        float: $float-left;
+    }
+    .gallery{
+        @media #{$minSmall}{
+            width:100%
+        }
+        @media #{$minMedium}{
+            width:50%;
+        }
+        .img-box{
+            overflow:hidden;
+            margin-bottom: 15px;
+            img{
+                @media #{$minSmall}{
+                    float:$float-left
+                }
+                width:150px;
+                height:150px;
+                
+            }
+        }
+        .text{
+            @media #{$minSmall}{
+                float:$float-left;
+                margin-right: 15px;
+                margin-left:15px;
+                width:calc(100% - 180px);
+            }
+            h4{
+                color:$secondColor;
+                margin: 10px 0 0;
+            }
+            p{
+                color:$forthColor;
+                line-height: 1.3;
+                margin-top: 5px;
+            }
+        }
+    }
+    .info{
+        
+        @media #{$minSmall}{
+            width:50%
+        }
+        @media #{$minMedium}{
+            width:25%;
+        }
+        ul{
+            color:$forthColor;
+            line-height:1.8 ;
+            li{
+                span{
+                    color:$secondColor;
+                    font-weight: 700;
+                }
+            }
+        }
+        h4{
+            color:$thirdColor;
+            margin-bottom: 0;
+            font-weight: 800;
+        }
+        p{
+            color:$forthColor;
+            margin-top: 5;
+        }
+    }
+    .contact{
+        
+        @media #{$minSmall}{
+            width:50%
+        }
+        @media #{$minMedium}{
+            width:25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            border:none;
+            outline:none;
+            width:100%;
+            padding:10px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            height:140px
+        }
+    }
+    .section-title{
+        font-size: 20px;
+        color:$secondColor;
+        text-transform: capitalize;
+        @media #{$maxMobile}{
+            text-align: center;
+        }
+    }
+
+    .copyright{
+        padding:25px 0;
+        border-top: 1px solid $thirdColor;
+        overflow: hidden;
+        color:$forthColor;
+        text-transform: capitalize;
+        margin-top: 30px;
+
+        .text,
+        .author{
+            float:$float-left;
+            width:50%;
+
+        }
+
+        .author{
+            text-align: $text-right;
+        }
+    }
+}
+/*end footer*/
